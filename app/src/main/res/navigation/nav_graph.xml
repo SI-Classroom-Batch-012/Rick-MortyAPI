@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/singleView">
+
+    <fragment
+        android:id="@+id/singleView"
+        android:name="com.example.rickandmortyapi.ui.SingleView"
+        android:label="fragment_single_view"
+        tools:layout="@layout/fragment_single_view" />
+    <fragment
+        android:id="@+id/listView"
+        android:name="com.example.rickandmortyapi.ui.ListView"
+        android:label="fragment_list_view"
+        tools:layout="@layout/fragment_list_view" />
+</navigation>
