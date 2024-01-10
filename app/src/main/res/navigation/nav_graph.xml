@@ -7,12 +7,16 @@
 
     <fragment
         android:id="@+id/singleView"
-        android:name="com.example.rickandmortyapi.ui.SingleView"
+        android:name="com.example.rickandmortyapi.ui.views.SingleView"
         android:label="fragment_single_view"
-        tools:layout="@layout/fragment_single_view" />
+        tools:layout="@layout/fragment_single_view" >
+        <action
+            android:id="@+id/action_singleView_to_listView"
+            app:destination="@id/listView" />
+    </fragment>
     <fragment
         android:id="@+id/listView"
-        android:name="com.example.rickandmortyapi.ui.ListView"
+        android:name="com.example.rickandmortyapi.ui.views.ListView"
         android:label="fragment_list_view"
         tools:layout="@layout/fragment_list_view" />
 </navigation>
